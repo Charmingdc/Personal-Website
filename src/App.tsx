@@ -1,8 +1,13 @@
+import Navbar from './components/Navbar.tsx';
 import './App.css'
 
 const App = () => {
  return (
-   <h1> Testing </h1>
+   <>
+    <header>
+      <Navbar />
+    </header>
+   </>
   )
 }
 
