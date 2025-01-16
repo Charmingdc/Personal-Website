@@ -1,4 +1,7 @@
-import Navbar from './components/Navbar.tsx';
+import Navbar from './components/Navbar';
+import HeroSection from  './components/HeroSection';
+import MovingTags from './components/MovingTags'
+
 import './App.css'
 
 const App = () => {
@@ -7,6 +10,11 @@ const App = () => {
     <header>
       <Navbar />
     </header>
+    
+    <main>
+      <HeroSection />
+      <MovingTags />
+    </main>
    </>
   )
 }

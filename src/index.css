@@ -1,6 +1,15 @@
 :root {
- --text-color: rgb(220, 220, 220);
+ --text-color: rgb(200, 200, 200);
  --bg-color: rgb(10, 10, 10);
  --shade: rgb(14, 14, 14);
  --box-radius: .8rem;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
