@@ -5,8 +5,15 @@ const HeroSection = () => {
       <p> I'm Adebayo Muis </p>
       
       <h1>
-       ℂ𝕣𝕖à𝕥𝕚𝕧𝕖 𝔽𝕣𝕠ñ𝕥𝕖𝕟𝕕 𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣.
+        ℂ𝕣𝕖𝕒𝕥𝕚𝕧𝕖 𝔽𝕣𝕠𝕟𝕥𝕖𝕟𝕕 𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣
       </h1>
+      
+      
+      <div className='hero-section-connects'>
+        <a href=''></a>
+        <a hrrf=''></a>
+        <a href=''></a>
+      </div>
       
       <p> Scroll for more 
        <span>

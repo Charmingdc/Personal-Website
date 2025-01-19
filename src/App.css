@@ -41,6 +41,7 @@ nav > ul {
  padding: 0 1.8rem;
  margin: .5rem 0 1rem 0;
  list-style: none;
+ z-index: 10;
 }
 
 nav > ul > li {
@@ -56,8 +57,8 @@ nav > ul > li:first-of-type {
  justify-content: space-evenly;
  padding-right: .6rem;
  background: rgba(25, 25, 25, 0.08);
- backdrop-filter: blur(2px);
- -webkit-backdrop-filter: blur(2px);
+ backdrop-filter: blur(3.4px);
+ -webkit-backdrop-filter: blur(3.4px);
 }
 
 nav > ul > li:first-of-type > h1 {
@@ -68,7 +69,7 @@ nav > ul > li:first-of-type > h1 {
  width: 3.2rem;
  height: 3.2rem;
  display: flex;
- align-items: flex-end;
+ align-items: center;
  justify-content: center;
  background-color: var(--shade);
  border-radius: var(--box-radius);
@@ -82,8 +83,8 @@ nav > ul > li:first-of-type > h1 {
  align-items: center;
  justify-content: center;
  background: rgba(25, 25,  25, 0.08);
- backdrop-filter: blur(2px);
- -webkit-backdrop-filter: blur(2px);
+ backdrop-filter: blur(3.4px);
+ -webkit-backdrop-filter: blur(3.4px);
  border: none;
  border-radius: var(--box-radius);
 }
@@ -147,10 +148,10 @@ section {
  margin-top: 1rem;
 }
 .hero-section > h1 {
- font-size: 3rem;
+ font-size: 3.4rem;
  font-weight: 340;
- line-height: 3.6rem;
- margin: 4.5rem 0 2.5rem 0;
+ line-height: 3.8rem;
+ margin: 4.5rem 0 3rem 0;
 }
 .hero-section > p:last-of-type {
  display: flex;
@@ -226,7 +227,23 @@ section {
 }
 
 
+.services-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2.4rem;
+  margin-top: 2rem;
+}
 
+.services-container > div {
+  width: 17rem;
+  height: 23rem;
+  padding: 1rem;
+  border: 0.2rem double var(--shade);
+  border-radius: var(--box-radius);
+}
 
 @media (min-width: 726px) {
   .about-section-container {

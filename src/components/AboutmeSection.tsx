@@ -1,10 +1,12 @@
+import SvgIcons from './SvgIcons.tsx';
+
 const AboutmeSection = () => {
   return (
     <section>
       <div className='section-headtag'>
         <h3> About me </h3>
         
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7l9.2 9.2M17 7v10H7"/></svg>
+        <SvgIcons type='rightDownArrow' width='40px' height='40px' />
       </div>
       
       <h1 className='section-headtitle'> Approach and philosophy </h1>
