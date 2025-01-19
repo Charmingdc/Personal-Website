@@ -1,11 +1,11 @@
 const HeroSection = () => {
   return (
     <section className='hero-section'>
-      <p> Hello! </p>
+      <p> Hi, 👋</p>
       <p> I'm Adebayo Muis </p>
       
       <h1>
-       Creative Frontend Developer.
+       ℂ𝕣𝕖à𝕥𝕚𝕧𝕖 𝔽𝕣𝕠ñ𝕥𝕖𝕟𝕕 𝔻𝕖𝕧𝕖𝕝𝕠𝕡𝕖𝕣.
       </h1>
       
       <p> Scroll for more 
