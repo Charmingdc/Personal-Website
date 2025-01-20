@@ -3,7 +3,9 @@ import SvgIcons from './SvgIcons.tsx';
 interface projctDetailsProps {
  name: string;
  type: string;
+ githubLink: string;
  projectId: string;
+ imgSource: string;
  description: string;
 }
 
@@ -13,14 +15,15 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
       <div className='project-header'>
         <span> {projectDetails.projectId } | { projectDetails.type.toUpperCase() } </span>
             
-        <span> 
+        <a href={projectDetails.githubLink}> 
           <SvgIcons type='github' />
-        </span>
+        </a>
       </div>
           
           
       <div className='project-details'>
         <div className='project-image'>
+          <img src={projectDetails.imgSource} alt={projectDetails.imgSource} />
         </div>
             
         <div className='project-info'>

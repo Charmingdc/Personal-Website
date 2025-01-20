@@ -13,7 +13,7 @@ const AboutmeSection = () => {
       
       <div className='about-section-container'>
         <div>
-          <img src='/illustrations/charmingdc.png' />
+          <img src='/illustrations/software-developer.jpg' />
         </div>
         
         <div>
