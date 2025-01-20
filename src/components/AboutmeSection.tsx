@@ -12,7 +12,9 @@ const AboutmeSection = () => {
       <h1 className='section-headtitle'> Approach and philosophy </h1>
       
       <div className='about-section-container'>
-        <div></div>
+        <div>
+          <img src='/illustrations/charmingdc.png' />
+        </div>
         
         <div>
           <p>

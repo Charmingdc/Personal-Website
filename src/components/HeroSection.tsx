@@ -1,3 +1,5 @@
+import SvgIcons from './SvgIcons.tsx';
+
 const HeroSection = () => {
   return (
     <section className='hero-section'>
@@ -9,11 +11,7 @@ const HeroSection = () => {
       </h1>
       
       
-      <div className='hero-section-connects'>
-        <a href=''></a>
-        <a hrrf=''></a>
-        <a href=''></a>
-      </div>
+      <a href='https://x.com/Charmingdc01' className='hero-xlink'> Say Hi on <span> 𝕏 </span> </a>
       
       <p> Scroll for more 
        <span>

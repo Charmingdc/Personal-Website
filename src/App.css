@@ -18,6 +18,12 @@ body {
  transition: 400ms;
 }
 
+a,
+a:hover,
+a:visited {
+ text-decoration: none;
+}
+
 svg {
  stroke: var(--text-color);
 }
@@ -104,13 +110,13 @@ main {
 }
 
 section {
- width: 88%;
+ width: 90%;
  height: auto;
  display: flex;
  flex-direction: column;
  align-items: center;
  color: var(--text-color);
- padding: 1rem 6%;
+ padding: 1rem 5%;
  scroll-margin: 2rem 0;
  margin: 1.4rem 0;
 }
@@ -132,6 +138,11 @@ section {
  align-self: flex-start;
  font-size: 2.6rem;
  font-weight: 380;
+ margin-bottom: 1.5rem;
+}
+
+.section-headtitle + p {
+ align-self: flex-start;
  margin-bottom: 1.8rem;
 }
 
@@ -153,6 +164,17 @@ section {
  line-height: 3.8rem;
  margin: 4.5rem 0 3rem 0;
 }
+
+.hero-xlink {
+ color: var(--text-color);
+ border-bottom: 0.1rem double var(--text-color);
+ margin-bottom: .4rem;
+}
+.hero-xlink span {
+ font-size: 1.4rem;
+ margin-left: .5rem;
+}
+
 .hero-section > p:last-of-type {
  display: flex;
  align-items: center;
@@ -164,7 +186,7 @@ section {
 
 .movingtags-outer-wrapper {
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -180,6 +202,8 @@ section {
   align-items: center;
   gap: 20px;
   animation: marquee-animation 18s linear infinite;
+  padding: 0 1rem;
+  border-radius: 3rem;
 }
 
 .inner-wrapper:hover {
@@ -201,6 +225,7 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .about-section-container > div {
@@ -212,16 +237,22 @@ section {
 }
 
 .about-section-container > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
   background-color: var(--shade);
-  background-image: url('/illustrations/developer.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   border-radius: var(--box-radius);
   margin-bottom: 1rem;
   animation: dim 1s linear infinite;
 }
+.about-section-container > div:first-of-type > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--box-radius);
+}
+
 .about-section-container > div:last-of-type > p {
   margin-top: 1rem;
 }
@@ -239,11 +270,110 @@ section {
 
 .services-container > div {
   width: 17rem;
-  height: 23rem;
-  padding: 1rem;
+  height: 18.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
   border: 0.2rem double var(--shade);
   border-radius: var(--box-radius);
 }
+
+.services-container > div > h2 {
+ font-size: 2.5rem;
+ font-weight: 320;
+ margin: 1rem 0;
+}
+
+
+.projects-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-box {
+  width: 100%;
+  height: 45rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: var(--shade);
+  border-radius: var(--box-radius);
+}
+
+.project-header {
+  width: 90%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem; 
+}
+
+.project-details {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1rem;
+ margin-top: .4rem;
+}
+
+.project-details .project-image {
+ width: 100%;
+ height: 50%;
+ background-color: var(--bg-color);
+}
+
+.project-details .project-info {
+ width: 90%;
+ height: 50%;
+ padding: 0 5%
+}
+.project-info > h1 {
+ font-size: 2rem;
+ margin-bottom: .5rem;
+}
+
+.project-tools {
+ width: 100%;
+ min-height: 3rem;
+ height: auto;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ border: 0.1rem solid var(--bg-color);
+ margin: 2rem 0;
+}
+
+.preview-btn {
+ width: 100%;
+ height: 2rem;
+ display: flex;
+ align-items: center;
+ color: var(--text-color);
+ font-size: .9rem;
+ gap: .5rem;
+ border-radius: var(--box-radius);
+}
+.preview-btn > span:first-of-type {
+ font-size: 1.2rem;
+}
+.preview-btn > span:last-of-type {
+ margin-top: .3rem;
+}
+
 
 @media (min-width: 726px) {
   .about-section-container {
@@ -258,5 +388,22 @@ section {
   }
   .about-section-container > div:last-of-type > p {
     margin-bottom: 1rem;
+  }
+  
+  .project-box {
+   height: 28rem;
+  }
+  
+  .project-details {
+    height: 100%;
+    flex-direction: row;
+  }
+  .project-details > .project-image,
+  .project-details > .project-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
