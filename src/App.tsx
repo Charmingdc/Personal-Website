@@ -1,9 +1,10 @@
 import Navbar from './components/Navbar';
 import HeroSection from  './components/HeroSection';
-import MovingTags from './components/MovingTags';
 import AboutmeSection from './components/AboutmeSection.tsx';
 import ServiceSection from './components/ServiceSection.tsx';
 import ProjectSection from './components/ProjectSection.tsx';
+import ResumeSection from './components/ResumeSection.tsx';
+import ContactSection from './components/ContactSection.tsx';
 
 import './App.css'
 
@@ -17,8 +18,9 @@ const App = () => {
     <main>
       <HeroSection />
       <AboutmeSection />
-      <ServiceSection />
       <ProjectSection />
+      <ResumeSection /> 
+      <ContactSection />
     </main>
    </>
   )

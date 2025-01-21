@@ -7,6 +7,7 @@ interface projctDetailsProps {
  projectId: string;
  imgSource: string;
  description: string;
+ stacks: string[];
 }
 
 const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ projectDetails }) => {
@@ -33,7 +34,14 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
            { projectDetails.description }
           </p>
               
-          <div className='project-tools'>
+          <div className='project-stacks'>
+            {
+              projectDetails.stacks.map((stack, index) => (
+                 <div className='stack' key={index}>
+                   { stack.toUpperCase() }
+                 </div>
+               ))
+            }
           </div>
               
           <a className='preview-btn'>

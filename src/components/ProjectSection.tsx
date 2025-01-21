@@ -7,6 +7,7 @@ interface Project {
  githubLink?: string;
  type: string;
  description: string;
+ stacks: string[];
 }
 
 const ProjectSection = () => {
@@ -18,6 +19,7 @@ const ProjectSection = () => {
      type: 'Javascript library',
      imgSource: '/illustrations/scrolljs-preview.png',
      description: 'A lightweight javascript library for adding animation on scroll effects (AOS) to elements with the flexibility of passing custom animations and callback functions.',
+     stacks: ['JavaScript'],
     },
     {
      name: 'MindEcho',
@@ -26,6 +28,7 @@ const ProjectSection = () => {
      type: 'mental health',
      imgSource: '/illustrations/mindecho-preview.png',
      description: 'A mental health web app that helps manage users mental wellbeing by providing mindfullness tools such as mood logging, soul calming soundscapes and an AI mental coach.',
+     stacks: ['html5', 'css3', 'javascript', 'apex chart', 'firebase'],
     },
     {
       name: 'Thryve',
@@ -33,15 +36,9 @@ const ProjectSection = () => {
       githubLink: 'https://github.com/Charmingdc/Thryve',
       type: 'Gratitude journalling',
       imgSource: '/illustrations/thryve.png',
-      description: 'A mental health companion web app for gratitude journalling that help relieve stress by expressing one"s gratitude with features like calendar view to track added journals and streak counts to motivate users.',
+      description: 'A gratitude journalling web app that help to relieve stress by expressing one"s gratitude with features like calendar view to track added journals and streak counts to motivate users.',
+      stacks: ['reactjs', 'css3', 'javascript', 'firebase'],
     },
-    {
-     name: 'HostImg',
-     projectId: '04',
-     type: 'Image hosting',
-     imgSource: '/illustrations/scrolljs-laptop.png',
-     description: 'A image hosting website where you can host your images and share them with anyone you want. You can get the img source link, html codes to display them and preview link to view your images.'
-    }
   ];
   
   

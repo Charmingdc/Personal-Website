@@ -13,7 +13,7 @@ const Navbar = () => {
         <a href='https://github.com/Charmingdc' className='nav-dp'>
          <SvgIcons type='github' width='30px' height='30px' />
         </a>
-        <h1> Charmingdc* </h1>
+        <h1> Charmingdc </h1>
       </li>
       <li> 
         <button className='switch-toggle' onClick={toggleTheme}>
