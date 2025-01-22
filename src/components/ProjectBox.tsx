@@ -1,6 +1,6 @@
 import SvgIcons from './SvgIcons.tsx';
 
-interface projctDetailsProps {
+interface projectDetailsProps {
  name: string;
  type: string;
  githubLink: string;
@@ -37,7 +37,7 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
               
           <div className='project-stacks'>
             {
-              projectDetails.stacks.map((stack, index) => (
+              projectDetails.stacks.map((stack: string, index: number) => (
                  <div className='stack' key={index}>
                    { stack.toUpperCase() }
                  </div>

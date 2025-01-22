@@ -4,7 +4,7 @@ interface ToolsProps {
 }
 
 const useTools = () => {
-  const tools: ToolsProps = [
+  const tools: ToolsProps[] = [
     { iconUrl: '/icons/icon-html.svg', altText: 'Html' },
     { iconUrl: '/icons/icon-css.svg', altText: 'Css' },
     { iconUrl: '/icons/icon-js.png', altText: 'JavaScript' },

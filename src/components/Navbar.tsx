@@ -3,7 +3,7 @@ import SvgIcons from './SvgIcons.tsx';
 
 
 const Navbar = () => {
- const { theme, toggleTheme } = useTheme();
+ const { toggleTheme } = useTheme();
  
  
   return (

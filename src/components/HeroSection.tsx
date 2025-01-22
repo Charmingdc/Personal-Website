@@ -1,5 +1,3 @@
-import SvgIcons from './SvgIcons.tsx';
-
 const HeroSection = () => {
   return (
     <section className='hero-section'>

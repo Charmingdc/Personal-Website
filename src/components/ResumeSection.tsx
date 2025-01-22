@@ -9,7 +9,7 @@ interface ToolsProps {
 
 
 const ResumeSection = () => {
-  const tools: ToolsProps = useTools();
+  const tools: ToolsProps[] = useTools();
   
   
   return (
