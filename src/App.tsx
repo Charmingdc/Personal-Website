@@ -19,6 +19,7 @@ const App = () => {
     <main>
       <HeroSection />
       <AboutmeSection />
+      <ServiceSection />
       <ProjectSection />
       <ResumeSection /> 
       <ContactSection />

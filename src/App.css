@@ -1,7 +1,7 @@
-/** importing styles **/
+/** importing fonts **/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+ 
+ 
 * {
  padding: 0;
  margin: 0;
@@ -14,7 +14,7 @@ body {
  flex-direction: column;
  align-items: center;
  font-family: 'Poppins';
- font-weight: 280;
+ font-weight: 290;
  background-color: var(--bg-color);
  transition: 400ms;
 }
@@ -23,6 +23,10 @@ a,
 a:hover,
 a:visited {
  text-decoration: none;
+}
+
+p {
+ font-size: .96rem;
 }
 
 svg {
@@ -129,7 +133,8 @@ section {
  display: flex;
  align-items: center;
  justify-content: center;
- margin: 1.5rem 0 .3rem 0;
+ margin-top: 1.5rem;
+ margin-bottom: -.1rem;
 }
 .section-headtag > h3 {
  font-weight: 300;
@@ -138,7 +143,7 @@ section {
 
 .section-headtitle {
  align-self: flex-start;
- font-size: 2.2rem;
+ font-size: 2.4rem;
  font-weight: 360;
  margin-bottom: 1.5rem;
 }
@@ -245,7 +250,6 @@ section {
   object-fit: cover;
   background-color: var(--shade);
   border-radius: var(--box-radius);
-  margin-bottom: 2rem;
   animation: dim 1s linear infinite;
 }
 .about-section-container > div:first-of-type > img {
@@ -266,26 +270,25 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2.4rem 4rem;
+  gap: 2rem 4rem;
   margin-top: 2rem;
 }
 
 .services-container > div {
-  width: 16rem;
-  height: 15rem;
+  width: 16.5rem;
+  height: 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: var(--shade);
-  border: 0.2rem double var(--shade);
-  border-radius: var(--box-radius);
+  border-top: 0.1rem solid var(--shade);
+  border-bottom: 0.1rem solid var(--shade);
 }
 
 .services-container > div > h2 {
  align-self: flex-start;
- font-size: 2rem;
+ font-size: 2.2rem;
  font-weight: 320;
  padding-bottom: .5rem;
  margin-bottom: 1.5rem;
