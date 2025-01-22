@@ -3,7 +3,7 @@ import SvgIcons from './SvgIcons.tsx';
 interface projectDetailsProps {
  name: string;
  type: string;
- githubLink: string;
+ githubLink?: string;
  projectId: string;
  imgSource: string;
  description: string;

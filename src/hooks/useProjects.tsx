@@ -1,7 +1,7 @@
 interface Project {
   name: string;
   projectId: string;
-  githubLink?: string | undefined;
+  githubLink?: string;
   type: string;
   imgSource: string;
   description: string;
