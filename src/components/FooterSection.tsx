@@ -1,6 +1,12 @@
 const FooterSection = () => {
  return (
-   <div></div>
+   <div>
+    <p> { new Date().getFullYear() } </p>
+    
+    <p>
+      Built with  '⚡' by <strong> Adebayo Muis </strong>
+     </p>
+   </div>
   )
 }
 

@@ -8,6 +8,7 @@ interface projctDetailsProps {
  imgSource: string;
  description: string;
  stacks: string[];
+ liveUrl: string;
 }
 
 const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ projectDetails }) => {
@@ -24,7 +25,7 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
           
       <div className='project-details'>
         <div className='project-image'>
-          <img src={projectDetails.imgSource} alt={projectDetails.imgSource} />
+          <img src={projectDetails.imgSource} alt={projectDetails.name} />
         </div>
             
         <div className='project-info'>
@@ -44,7 +45,7 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
             }
           </div>
               
-          <a className='preview-btn'>
+          <a href={projectDetails.liveUrl} className='preview-btn'>
             <span> 🌍 </span>
             Live Preview
             <span> <SvgIcons type='rightArrow' width='22px' height='22px' /> </span>
