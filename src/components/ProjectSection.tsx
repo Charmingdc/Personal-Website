@@ -5,7 +5,7 @@ import useProjects from '../hooks/useProjects.tsx';
 interface Project {
   name: string;
   projectId: string;
-  githubLink?: string;
+  githubLink?: string | undefined;
   imgSource: string;
   type: string;
   description: string;
