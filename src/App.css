@@ -442,6 +442,7 @@ section {
 }
 .tools-container > div p {
  font-size: .8rem;
+ text-align: center;
 }
 
 
@@ -465,6 +466,10 @@ section {
  padding: 0 5%;
  border: 0.1rem solid var(--shade);
  border-radius: var(--box-radius);
+ transition: 200ms;
+}
+.contact-div:hover {
+ transform: scale(0.9);
 }
 
 
@@ -511,10 +516,12 @@ section {
   }
   
   .contacts-container {
+   width: 100%;
+   justify-content: space-between;
    flex-direction: row;
    flex-wrap: wrap;
   }
   .contacts-container > div {
-   width: 45%;
+   width: 37%;
   }
 }

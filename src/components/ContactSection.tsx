@@ -24,7 +24,9 @@ const ContactSection = () => {
         Get in touch 
       </h2>
       
-      <p> Let's bring your ideas to life </p>
+      <p>
+        Interested in working together? We should queue up a time to chat. I’ll buy the coffee :)
+      </p>
       
       <div className='contacts-container'>
         { 

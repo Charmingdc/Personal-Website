@@ -5,6 +5,7 @@ import ServiceSection from './components/ServiceSection.tsx';
 import ProjectSection from './components/ProjectSection.tsx';
 import ResumeSection from './components/ResumeSection.tsx';
 import ContactSection from './components/ContactSection.tsx';
+import FooterSection from './components/FooterSection.tsx';
 
 import './App.css'
 
@@ -22,6 +23,10 @@ const App = () => {
       <ResumeSection /> 
       <ContactSection />
     </main>
+    
+    <footer>
+      <FooterSection />
+    </footer>
    </>
   )
 }
