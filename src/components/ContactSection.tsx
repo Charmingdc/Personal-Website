@@ -4,11 +4,11 @@ const ContactSection = () => {
  
   const contactAccounts = [
    { name: 'Github', url: 'https://github.com/Charmingdc'},
-   { name: 'Linkedln', url: 'muis' },
-   { name: 'Facebook', url: 'muis' },
-   { name: 'X ( formerly Twitter )', url: 'muis'},
-   { name: 'Reddit', url: 'muis'},
-   { name: 'Gmail', url: 'muis' },
+   { name: 'Linkedln', url: 'https://www.linkedin.com/in/adebayo-muis' },
+   { name: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61554495275289' },
+   { name: 'X ( formerly Twitter )', url: 'https://x.com/Charmingdc01'},
+   { name: 'Instagram', url: ''},
+   { name: 'Gmail', url: 'mailto:charmingdc002@gmail.com' },
   ]
   
   

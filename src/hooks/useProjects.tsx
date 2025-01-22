@@ -44,6 +44,17 @@ const useProjects = () => {
       stacks: ["reactjs", "css3", "javascript", "firebase"],
       liveUrl: "https://thryve-alpha.vercel.app",
     },
+    {
+      name: "HostImg",
+      projectId: "04",
+      githubLink: "",
+      type: "Image hosting",
+      imgSource: "/illustrations/hostimg-preview.png",
+      description:
+        'A img hosting website where you can host images for free with features for sharing hosted images to others and also provides the html code to display them on webpages',
+      stacks: ["html5", "css3", "javascript", "jquery", "wapka"],
+      liveUrl: "https://hostimg.wapka.co",
+    },
   ];
 
   return projects;
