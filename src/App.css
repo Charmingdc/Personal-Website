@@ -174,6 +174,7 @@ section {
 
 .hero-section > div img {
  width: 80%;
+ animation: float 1.5s linear infinite;
  z-index: 5;
 }
 
@@ -272,13 +273,14 @@ section {
 
 .project-box {
   width: 100%;
-  min-height: 45rem;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
   background-color: var(--shade);
+  border: 0.2rem solid var(--shade);
   border-radius: var(--box-radius);
 }
 
@@ -309,7 +311,6 @@ section {
  justify-content: center;
  object-fit: cover;
  background-color: var(--bg-color);
- border: 0.1rem solid var(--shade);
 }
 .project-image > img {
  width: 100%;
@@ -482,26 +483,27 @@ footer > div {
   }
   
   .services-container > div {
-   width: 38%;
+   width: 37%;
   }
-  
+ 
   .project-box {
-   min-height: 26rem;
    height: 26rem;
+   overflow: hidden;
+  }
+  .project-details {
+   height: 100%;
+   flex-direction: row;
+  }
+  .project-details > .project-info,
+  .project-details > .project-image {
+   height: 100%;
+  }
+  .project-details > .project-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
   }
   
-  .project-details {
-    height: 100%;
-    flex-direction: row;
-  }
-  .project-details > .project-image,
-  .project-details > .project-info {
-    width: 50%;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   
   .tools-container > div {
    width: 10rem;
