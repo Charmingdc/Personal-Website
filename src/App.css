@@ -57,16 +57,20 @@ header,nav {
 }
 
 nav > ul {
- width: 94vw;
- height: 5rem;
+ width: 80vw;
+ height: 4rem;
  position: fixed;
- top: .2rem;
+ top: .4rem;
  display: flex;
  align-items: center;
  justify-content: space-between;
  color: var(--text-color);
- padding: 0 1.8rem; 
- margin: .5rem 0 1rem 0;
+ padding: 0 .8rem; 
+ background-color: rgba(50, 50, 50, 0.1);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border-radius: var(--box-radius);
+ margin: .5rem 0 .8rem 0;
  list-style: none;
  z-index: 10;
 }
@@ -83,9 +87,6 @@ nav > ul > li:first-of-type {
  height: auto;
  justify-content: space-evenly;
  padding-right: .6rem;
- background: rgba(25, 25, 25, 0.08);
- backdrop-filter: blur(5px);
- -webkit-backdrop-filter: blur(5px);
 }
 
 nav > ul > li:first-of-type > h1 {
@@ -98,9 +99,8 @@ nav > ul > li:first-of-type > h1 {
  display: flex;
  align-items: center;
  justify-content: center;
- background-color: var(--shade);
  border-radius: var(--box-radius);
- margin-right: .8rem;
+ margin-left: -.2rem;
 }
 
 .switch-toggle {
@@ -255,14 +255,15 @@ section {
 }
 
 .services-container > div {
-  width: 80%;
-  height: 18rem;
+  width: 75%;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
   background-color: var(--shade);
+  background-image: var(--shade);
   border-radius: var(--box-radius);
 }
 
@@ -295,6 +296,7 @@ section {
   align-items: center;
   padding: 2rem 0;
   background-color: var(--shade);
+  background-image: var(--shade);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 0.1rem solid var(--shade);

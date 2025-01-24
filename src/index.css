@@ -1,8 +1,8 @@
 :root {
  --text-color: rgb(220, 220, 220);
- --bg-color:  rgb(10, 10, 14);
- --shade: rgb(15, 20, 30)/*rgb(14, 14, 18)*/;
- --sclr: rgb(40, 60, 140)/*rgb(138, 43, 226)*/;
+ --bg-color:  rgb(5, 5, 9);
+ --shade: linear-gradient(to bottom left, rgb(17, 18, 23), rgb(9, 8, 13));
+ --sclr: rgb(20, 30, 100);
  --box-radius: 1rem;
 }
 
