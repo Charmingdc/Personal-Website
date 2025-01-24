@@ -205,42 +205,70 @@ section {
 }
 
 
-.about-section-container {
-  width: 100%;
+.about-section-info,
+.about-section-brief {
+  width: 85%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 5%;
+  background-color: var(--shade);
+  background-image: var(--shade);
+  border-radius: var(--box-radius);
   margin-top: 2rem;
 }
 
-.about-section-container > div {
-  width: 95%;
-  height: 26rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.about-section-brief {
+ height: 34rem;
+ gap: 1rem;
 }
 
-.about-section-container > div:first-of-type {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  object-fit: cover;
-  background-color: var(--shade);
-  border-radius: var(--box-radius);
-  animation: dim 1s linear infinite;
-}
-.about-section-container > div:first-of-type > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--box-radius);
+.about-section-brief > img {
+ width: 100%;
+ height: 70%;
+ border-radius: var(--box-radius);
+ transition: 400ms;
+ 
+ &:hover {
+  transform: scale(0.96);
+ }
 }
 
-.about-section-container > div:last-of-type > p {
-  margin-top: 1rem;
+.about-section-brief > ul {
+ width: 88%;
+ height: fit-content;
+ max-height: 30%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 1rem 6%;
+ gap: .5rem;
+ background-color: var(--bg-color);
+ border-radius: var(--box-radius);
+ list-style: none;
+}
+.about-section-brief > ul li {
+  text-align: left;
+  font-family: 'Fredoka';
+}
+.about-section-brief strong {
+ margin-right: .4rem;
+}
+
+.about-section-info > div  {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+ }
+ 
+.about-section-info p {
+ margin-bottom: 1rem;
 }
 
 
@@ -483,6 +511,7 @@ footer > div {
 
 
 
+
 @media (min-width: 726px) {
  .hero-section {
    flex-direction: row;
@@ -495,19 +524,30 @@ footer > div {
   }
   
   
-  .about-section-container {
-    align-items: center;
+  .about-section-brief {
+    height: 20rem;
     flex-direction: row;
+  }
+  .about-section-brief > img {
+   height: 100%;
+  }
+  .about-section-brief ul {
+   height: 85%;
+   padding: 0 5%;
+   padding-top: 3rem;
+   max-height: 100%;
+  }
+  
+  .about-section-info {
+    height: auto;
+    align-items: center;
     justify-content: space-between;
     gap: 2rem;
   }
-  
-  .about-section-container > div {
-    width: 50%;
+  .about-section-info > div {
+   margin-bottom: 1.5rem;
   }
-  .about-section-container > div:last-of-type > p {
-    margin-bottom: 1rem;
-  }
+ 
   
   .services-container > div {
    width: 37%;
