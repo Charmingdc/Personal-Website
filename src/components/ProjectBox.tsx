@@ -11,9 +11,9 @@ interface projectDetailsProps {
  liveUrl: string;
 }
 
-const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ projectDetails }) => {
+const ProjectBox: React.FC<{ projectDetails: projectDetailsProps; index: number }> = ({ projectDetails, index }) => {
   return (
-    <div className='project-box'>
+    <div className='project-box' style={{top: `${index + 1}rem`}}>
       <div className='project-header'>
         <span> {projectDetails.projectId } | { projectDetails.type.toUpperCase() } </span>
             

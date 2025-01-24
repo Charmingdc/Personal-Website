@@ -1,17 +1,17 @@
 :root {
- --text-color: rgb(200, 200, 200);
- --bg-color: rgb(10, 10, 14);
- --shade: rgb(14, 14, 18);
- --sclr: rgb(138, 43, 226);
+ --text-color: rgb(220, 220, 220);
+ --bg-color:  rgb(10, 10, 14);
+ --shade: rgb(15, 20, 30)/*rgb(14, 14, 18)*/;
+ --sclr: rgb(40, 60, 140)/*rgb(138, 43, 226)*/;
  --box-radius: 1rem;
 }
 
 
 .light {
   --text-color: rgb(55, 55, 55);
-  --bg-color: rgb(230, 230, 250);
-  --shade: rgba(138, 43, 226, 0.1);
-  --sclr: rgb(138, 43, 226);
+  --bg-color: rgb(240, 245, 255);
+  --shade: rgb(210, 225, 245)/*rgb(230, 230, 250)*/;
+  --sclr: rgb(135, 140, 240);
   --box-radius: 1rem;
 }
 
