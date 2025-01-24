@@ -1,20 +1,47 @@
+import { motion, MotionConfig } from 'motion/react';
+
 import SvgIcons from './SvgIcons.tsx';
 
 const AboutmeSection = () => {
+  const variants = {
+   hidden: { opacity: 0 },
+   active: { 
+     opacity: 1,
+     transition: { duration: 0.4, ease: 'easeOut'}
+   }
+  }
+  
   return (
     <section>
-   
-      <div className='section-headtag'>
+    
+    <MotionConfig 
+      transition={{ duration: 0.8, ease: 'easeOut'}}>
+      <motion.div 
+        className='section-headtag'
+        variants={variants}
+        initial="hidden"
+        whileInView="active">
         <h3> About me </h3>
         
         <SvgIcons type='rightDownArrow' width='40px' height='40px' />
-      </div>
+      </motion.div>
       
-      <h1 className='section-headtitle'> Approach and philosophy </h1>
-     
+      <motion.h1
+        className='section-headtitle'
+        variants={variants}
+        initial="hidden"
+        whileInView="active"> 
+         Approach and philosophy
+       </motion.h1>
+    </MotionConfig>
 
-      <div className="about-section-brief">
-        <img src='/illustrations/charmingdc.jpg' alt='Adebayo Muis ( Charmingdc )' />
+      <motion.div 
+        className="about-section-brief"
+        initial={{opacity: 0, x: '-100%'}}
+        whileInView={{ opacity: 1, x: '0', transition: {duration: 1, ease: 'easeOut'} }}>
+        <img 
+          src='/illustrations/charmingdc.jpg' 
+          alt='Adebayo Muis ( Charmingdc )' />
         
         <ul>
           <li> 
@@ -37,9 +64,13 @@ const AboutmeSection = () => {
             '10,000+': string,
           </li>
         </ul>
-      </div>
+      </motion.div>
       
-      <div className='about-section-info'>
+      <motion.div 
+        className='about-section-info'
+        initial={{opacity: 0, y: '4rem'}}
+        whileInView={{ opacity: 1, y: '0', transition: {duration: 1, ease: 'easeOut'} }}
+        >
           <p>
             About me? I am a dedicated and creative web developer with a strong foundation in JavaScript, TypeScript, React, and Firebase. My passion lies in building user-friendly, scalable applications that solve real-world problems.
           </p>
@@ -51,7 +82,7 @@ const AboutmeSection = () => {
           <p>
             Driven by curiosity and a desire for continuous growth, I’m always exploring new tools, frameworks, and ways to improve my craft.
           </p>
-      </div>
+      </motion.div>
     </section>
   )
 }

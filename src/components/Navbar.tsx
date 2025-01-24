@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+
 import { useTheme } from '../contexts/ThemeContext.tsx';
 import SvgIcons from './SvgIcons.tsx';
 
@@ -8,7 +10,9 @@ const Navbar = () => {
  
   return (
    <nav>
-    <ul>
+    <motion.ul 
+      initial={{ y: '-4rem' }}
+      animate={{ y: '0rem', transition: { duration: 0.8, ease: 'easeIn'} }}>
       <li>
         <a href='https://github.com/Charmingdc' className='nav-dp'>
          <SvgIcons type='github' width='30px' height='30px' />
@@ -20,7 +24,7 @@ const Navbar = () => {
          <div></div>
         </button> 
        </li>
-    </ul>
+    </motion.ul>
    </nav>
   )
 }

@@ -189,8 +189,7 @@ section {
 
 .hero-section > div img {
  width: 80%;
- animation: float 1.5s linear infinite;
- z-index: 5;
+  /* animation: float 1.5s linear infinite; */
 }
 
 .hero-section  h1 {
