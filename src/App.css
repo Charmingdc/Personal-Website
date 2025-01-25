@@ -226,16 +226,23 @@ section {
  gap: 1rem;
 }
 
-.about-section-brief > img {
+.about-section-brief > div {
  width: 100%;
  height: 70%;
  object-fit: cover;
  border-radius: var(--box-radius);
- transition: 400ms;
  
- &:hover {
+ &:hover img {
   transform: scale(0.96);
  }
+}
+
+.about-section-brief > div img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: var(--box-radius);
+ transition: 400ms;
 }
 
 .about-section-brief > ul {
@@ -529,11 +536,11 @@ footer > div {
     height: 24rem;
     flex-direction: row;
   }
-  .about-section-brief > img {
+  .about-section-brief > div {
    height: 100%;
   }
   .about-section-brief ul {
-   height: 85%;
+   height: 87%;
    padding: 0 5%;
    padding-top: 3rem;
    max-height: 100%;

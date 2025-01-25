@@ -11,34 +11,38 @@ const AboutmeSection = () => {
   return (
     <section>
     
-    <MotionConfig 
-      transition={{ duration: 1, ease: 'easeOut'}}>
-      <motion.div 
-        className='section-headtag'
-        variants={variants}
-        initial="hidden"
-        whileInView="active">
-        <h3> About me </h3>
+      <MotionConfig 
+        transition={{ duration: 1, ease: 'easeOut'}}>
+        <motion.div 
+          className='section-headtag'
+          variants={variants}
+          initial="hidden"
+          whileInView="active">
+          <h3> About me </h3>
         
-        <SvgIcons type='rightDownArrow' width='40px' height='40px' />
-      </motion.div>
+          <SvgIcons type='rightDownArrow' width='40px' height='40px' />
+        </motion.div>
       
-      <motion.h1
-        className='section-headtitle'
-        variants={variants}
-        initial="hidden"
-        whileInView="active"> 
-         Approach and philosophy
-       </motion.h1>
-    </MotionConfig>
+        <motion.h1
+          className='section-headtitle'
+          variants={variants}
+          initial="hidden"
+          whileInView="active"> 
+           Approach and philosophy
+         </motion.h1>
+      </MotionConfig>
+
 
       <motion.div 
         className="about-section-brief"
         initial={{opacity: 0, x: '-100%'}}
         whileInView={{ opacity: 1, x: '0', transition: {duration: 1, ease: 'easeOut'} }}>
-        <img 
+        
+        <div>
+          <img 
           src='/illustrations/sketch-boy.jpg' 
           alt='Adebayo Muis ( Charmingdc )' />
+        </div>
         
         <ul>
           <li> 
