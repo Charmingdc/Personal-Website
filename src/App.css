@@ -444,7 +444,7 @@ section {
  gap: 2rem;
 }
 
-.tools-container > div {
+.tools-container > div div {
  width: 8rem;
  height: 8rem;
  display: flex;
@@ -456,16 +456,13 @@ section {
  border-radius: var(--box-radius);
  transition: 200ms;
 }
-.tools-container > div:hover {
- transform: scale(0.9);
-}
 
-.tools-container > div img {
+.tools-container > div div img {
  width: 55%;
  height: 55%;
  border-radius: var(--box-radius);
 }
-.tools-container > div p {
+.tools-container > div div p {
  font-size: .8rem;
  text-align: center;
 }

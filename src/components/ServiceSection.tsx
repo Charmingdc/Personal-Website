@@ -1,16 +1,35 @@
+import { motion, MotionConfig } from 'motion/react';
 import SvgIcons from './SvgIcons.tsx';
 
 const ServiceSection = () => {
+ const variants = {
+   hidden: { opacity: 0 },
+   active: { opacity: 1 }
+  }
+  
+  
   return (
     <section>
-      <div className='section-headtag'>
-        <h3> Services </h3>
+      <MotionConfig 
+        transition={{ duration: 1, ease: 'easeOut'}}>
+         <motion.div 
+          className='section-headtag'
+          variants={variants}
+          initial="hidden"
+          whileInView="active">
+           <h3> Services </h3>
         
-        <SvgIcons type='rightDownArrow' />
-      </div>
+           <SvgIcons type='rightDownArrow' width='40px' height='40px' />
+        </motion.div>
       
-      <h1 className='section-headtitle'>  Creating impactful projects 
-      </h1>
+        <motion.h1
+          className='section-headtitle'
+          variants={variants}
+          initial="hidden"
+          whileInView="active"> 
+           Creating impactful projects
+        </motion.h1>
+      </MotionConfig>
       
       
       <p>

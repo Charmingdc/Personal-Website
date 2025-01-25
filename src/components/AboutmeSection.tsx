@@ -5,17 +5,14 @@ import SvgIcons from './SvgIcons.tsx';
 const AboutmeSection = () => {
   const variants = {
    hidden: { opacity: 0 },
-   active: { 
-     opacity: 1,
-     transition: { duration: 0.4, ease: 'easeOut'}
-   }
+   active: { opacity: 1 }
   }
   
   return (
     <section>
     
     <MotionConfig 
-      transition={{ duration: 0.8, ease: 'easeOut'}}>
+      transition={{ duration: 1, ease: 'easeOut'}}>
       <motion.div 
         className='section-headtag'
         variants={variants}
