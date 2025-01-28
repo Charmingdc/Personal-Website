@@ -3,8 +3,8 @@ import SvgIcons from './SvgIcons.tsx';
 
 const ServiceSection = () => {
  const variants = {
-   hidden: { opacity: 0 },
-   active: { opacity: 1 }
+   hidden: { opacity: 0, y: '4rem'},
+   active: { opacity: 1, y: '0rem' }
   }
   
   
@@ -29,48 +29,65 @@ const ServiceSection = () => {
           whileInView="active"> 
            Creating impactful projects
         </motion.h1>
-      </MotionConfig>
       
       
-      <p>
-        Here are some of the services I offer :)
-      </p>
+      
+        <p>
+          Here are some of the services I offer :)
+        </p>
       
      
-      <div className='services-container'>
-        <div>
-          <h2> Web Development </h2>
+        <div className='services-container'>
+          <motion.div 
+            variants={variants}
+            initial="hidden"
+            whileTap={{ scale: 1.2 }}
+            whileInView="active">
+            <h2> 🚀 Web Development </h2>
           
-          <p>
-           I design and craft beautiful websites and seamless experiences with ReactJs, CSS, Tailwind, Typescript, and JavaScript.
-          </p>
-        </div>
+            <p>
+             I design and craft beautiful websites and seamless experiences with ReactJs, CSS, Tailwind, Typescript, and JavaScript.
+            </p>
+          </motion.div>
         
-        <div>
-          <h2> API Integrations </h2>
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileTap={{ scale: 1.2 }}
+            whileInView="active">
+            <h2> 🚀 API Integrations </h2>
           
-          <p>
-            Integrating backend services and APIs to the frontend securely to fetch and display data in real time.
-          </p>
-        </div>
+            <p>
+              Integrating backend services and APIs to the frontend securely to fetch and display data in real time.
+            </p>
+          </motion.div>
         
-        <div>
-          <h2> Responsive Design </h2>
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            whileTap={{ scale: 1.2 }}
+            whileInView="active">
+            <h2> 🚀 Responsive Design </h2>
           
-          <p>
-            Building websites and applications that work seamlessly on various devices and screen sizes, from desktop to smartphones.
-          </p>
-        </div>
+            <p>
+              Building websites and applications that work seamlessly on various devices and screen sizes, from desktop to smartphones.
+            </p>
+          </motion.div>
         
-        <div>
-          <h2> Version Control </h2>
+          <motion.div 
+           variants={variants}
+            initial="hidden"
+            whileTap={{ scale: 1.2 }}
+            whileInView="active">
+            <h2> 🚀 Version Control </h2>
           
-          <p>
-            Using version control systems like Git/GitHub to collaborate with other developers and manage code changes effectively.
-          </p>
-        </div>
+            <p>
+              Using version control systems like Git/GitHub to collaborate with other developers and manage code changes effectively.
+            </p>
+          </motion.div>
        
-      </div>
+        </div>
+      </MotionConfig>
     </section>
   )
 }

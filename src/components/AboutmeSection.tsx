@@ -4,8 +4,8 @@ import SvgIcons from './SvgIcons.tsx';
 
 const AboutmeSection = () => {
   const variants = {
-   hidden: { opacity: 0 },
-   active: { opacity: 1 }
+   hidden: { opacity: 0, y: '4rem' },
+   active: { opacity: 1, y: '0rem' }
   }
   
   return (

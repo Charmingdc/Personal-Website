@@ -287,29 +287,28 @@ section {
   align-items: center;
   justify-content: center;
   gap: 2rem 4rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .services-container > div {
-  width: 75%;
-  height: 20rem;
+  width: 85%;
+  height: 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  background-color: var(--shade);
-  background-image: var(--shade);
-  border-radius: var(--box-radius);
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid var(--shade);
 }
 
 .services-container > div > h2 {
  align-self: flex-start;
  font-size: 2.2rem;
- font-weight: 320;
- padding-bottom: .5rem;
- margin-bottom: 1.5rem;
+ font-weight: 400;
+ margin-top: -2rem;
+ margin-bottom: 2rem;
 }
+
 
 
 .projects-container {
