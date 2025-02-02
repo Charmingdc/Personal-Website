@@ -22,8 +22,8 @@ const HeroSection = () => {
         initial={{ y: '-10rem' }} 
         animate={{ y: '0', transition: { duration: 0.8, ease: 'easeOut' } }}>
         <img 
-          src="/illustrations/astronaut.png.webp"
-          alt="Astronaut" 
+          src="/illustrations/laptopforcontact-Db64_6nO.png"
+          alt="Man holding a laptop" 
         />
       </motion.div>
     </section>
