@@ -46,23 +46,23 @@ const AboutmeSection = () => {
         
         <ul>
           <li> 
-            <strong> Name: </strong>
-            'Adebayo Muis': string,
+            <strong> 🧑‍💻 Name: </strong>
+            Adebayo Muis
           </li>
           <li> 
-            <strong> Alias: </strong> 'Charmingdc': string,
+            <strong> 🆔 Alias: </strong> Charmingdc
           </li>
           <li>
-            <strong> Hobby: </strong>
-            ['Coding', 'Reading', 'Drawing']: string[],
+            <strong> 🎨 Hobby: </strong>
+             Coding, Reading, Drawing
           </li>
           <li>
-           <strong> Years of exp: </strong>
-            '2+': string,
+           <strong> 📅 Experience: </strong>
+            2+ years
           </li>
           <li> 
-            <strong> Lines of code: </strong>
-            '10,000+': string,
+            <strong> 💻 Lines of code: </strong>
+            10,000+
           </li>
         </ul>
       </motion.div>
