@@ -60,6 +60,10 @@ const AboutmeSection = () => {
            <strong> 📅 Experience: </strong>
             2+ years
           </li>
+          <li>
+            <strong> 🚩 Location: </strong>
+            Nigeria
+          </li>
           <li> 
             <strong> 💻 Lines of code: </strong>
             10,000+
