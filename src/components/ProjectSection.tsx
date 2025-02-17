@@ -53,7 +53,7 @@ const ProjectSection = () => {
       
       <div className="projects-container">
         {projects.map((project, index) => (
-          <ProjectBox projectDetails={project} index={index} key={index} />
+          <ProjectBox projectDetails={project} key={index} />
         ))}
       </div>
     </section>

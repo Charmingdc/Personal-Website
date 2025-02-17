@@ -1,3 +1,4 @@
+import { motion, MotionConfig } from 'motion/react';
 import SvgIcons from './SvgIcons.tsx';
 
 interface projectDetailsProps {
@@ -11,49 +12,57 @@ interface projectDetailsProps {
  liveUrl: string;
 }
 
-const ProjectBox: React.FC<{ projectDetails: projectDetailsProps; index: number }> = ({ projectDetails, index }) => {
+const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ projectDetails }) => {
+ const variants = {
+   hidden: { opacity: 0, y: '4rem'},
+   active: { opacity: 1, y: '0rem' }
+  }
+  
+
   return (
-    <div className='project-box' style={{top: `${index + 1}rem`}}>
-      <div className='project-header'>
-        <span> {projectDetails.projectId } | { projectDetails.type.toUpperCase() } </span>
-            
-        <a href={projectDetails.githubLink}> 
-          <SvgIcons type='github' />
-        </a>
+    <motion.div 
+      className='project-box'
+      variants={variants}
+      initial="hidden"
+      whileTap={{ scale: 1.2 }}
+      whileInView="active"
+      transition={{ duration: 1, ease: 'easeOut'}}>
+      <div className='project-image'>
       </div>
-          
-          
-      <div className='project-details'>
-        <div className='project-image'>
-          <img src={projectDetails.imgSource} alt={projectDetails.name} />
+      
+      <div className='project-info'>
+        <h2> { projectDetails.name } </h2>
+        
+        <p>
+          { projectDetails.description }
+        </p>
+        
+        <div className='project-stacks'>
+          {projectDetails.stacks
+          .map((stack, index) => (
+            <div className='stack' key={index}>
+              { stack }
+            </div>
+          ))}
         </div>
-            
-        <div className='project-info'>
-          <h1> { projectDetails.name } </h1>
+        
+        <ul className='project-cta'>
+          <li>
+            <a href={projectDetails.liveUrl}>
+              Preview
               
-          <p>
-           { projectDetails.description }
-          </p>
-              
-          <div className='project-stacks'>
-            {
-              projectDetails.stacks.map((stack: string, index: number) => (
-                 <div className='stack' key={index}>
-                   { stack.toUpperCase() }
-                 </div>
-               ))
-            }
-          </div>
-              
-          <a href={projectDetails.liveUrl} className='preview-btn'>
-            <span> 🌍 </span>
-            Live Preview
-            <span> <SvgIcons type='rightArrow' width='22px' height='22px' /> </span>
-          </a>
-        </div>
-            
+              <SvgIcons type='trendUp' width='23px' height='23px' />
+            </a>
+          </li>
+          
+          <li>
+           <a href={projectDetails.githubLink}>
+             <SvgIcons type='github' />
+           </a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
