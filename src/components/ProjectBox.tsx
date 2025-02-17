@@ -28,6 +28,10 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
       whileInView="active"
       transition={{ duration: 1, ease: 'easeOut'}}>
       <div className='project-image'>
+        <img 
+          src={projectDetails.imgSource}
+          load='lazy'
+          alt={`${projectDetails.name} preview`} />
       </div>
       
       <div className='project-info'>
