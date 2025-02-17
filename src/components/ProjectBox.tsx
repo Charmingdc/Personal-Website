@@ -1,4 +1,4 @@
-import { motion, MotionConfig } from 'motion/react';
+import { motion } from 'motion/react';
 import SvgIcons from './SvgIcons.tsx';
 
 interface projectDetailsProps {
