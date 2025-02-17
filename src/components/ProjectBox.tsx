@@ -30,7 +30,6 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
       <div className='project-image'>
         <img 
           src={projectDetails.imgSource}
-          load='lazy'
           alt={`${projectDetails.name} preview`} />
       </div>
       
