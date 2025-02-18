@@ -174,12 +174,8 @@ section {
  align-items: center;
  justify-content: center;
  background-color: var(--bg-color);
- background-image: var(--hero-image);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
  position: relative;
- padding-top: 2rem;
+ padding-top: 1.8rem;
  margin-top: 0;
 }
 
@@ -200,10 +196,10 @@ section {
  font-size: 3rem;
  font-weight: 600;
  line-height: 3.8rem;
- margin: 2rem 0 .6rem 0;
+ margin: 2rem 0 .4rem 0;
 }
 .hero-section h2 {
- margin-bottom: 1.2rem;
+ margin-bottom: 1.7rem;
 }
 
 .hero-section span {
