@@ -4,6 +4,15 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <motion.div 
+        className='hand-wrapper'
+        initial={{ x: '-100%' }} 
+        animate={{ x: '0', transition: { duration: 0.8, ease: 'easeOut' } }}>
+        <img 
+          src='/illustrations/waving-hand.png'
+          alt='Welcome' />
+      </motion.div>
+      
+      <motion.div 
         initial={{ x: '-100%' }} 
         animate={{ x: '0', transition: { duration: 0.8, ease: 'easeOut' } }}>
         <h1>

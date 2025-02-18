@@ -188,17 +188,33 @@ section {
  text-align: left;
 }
 
-.hero-section > div img {
- width: 75%;
+.hero-section .hand-wrapper {
+ position: absolute;
+ top: 0;
+ padding: 0;
+ transform-style: preserve-3d;
+ perspective: 500px;
+}
+.hero-section .hand-wrapper img {
+ width: 13rem;
+ height: 8rem;
+ transform-origin: bottom center;
+ transform: rotateX(180deg) rotate(70deg);
+ margin-top: -7rem;
+ margin-left: -7.3rem;
+ z-index: 0;
+ animation: waving 2s linear infinite;
 }
 
 .hero-section  h1 {
  font-size: 3rem;
  font-weight: 600;
  line-height: 3.8rem;
- margin: 2rem 0 .2rem 0;
+ z-index: 2;
+ margin: 2rem 0 .4rem 0;
 }
 .hero-section h2 {
+ font-size: 1.8rem;
  margin-bottom: 1.7rem;
 }
 
