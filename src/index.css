@@ -2,7 +2,7 @@
  --text-color: rgb(220, 220, 220);
  --bg-color:  rgb(5, 5, 9);
  --shade: rgb(17, 18, 23) /* rgb(9, 8, 13)*/;
- --sclr: rgb(20, 30, 100);
+ --sclr: rgb(20, 30, 120);
  --box-radius: 1rem;
 }
 
@@ -11,7 +11,7 @@
   --text-color: rgb(55, 55, 55);
   --bg-color: rgb(240, 245, 255);
   --shade: rgb(210, 225, 245)/*rgb(230, 230, 250)*/;
-  --sclr: rgb(135, 140, 240);
+  --sclr: rgb(135, 140, 255);
   --box-radius: 1rem;
 }
 

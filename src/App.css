@@ -171,11 +171,11 @@ section {
 
 .hero-section {
  min-height: 90vh;
- align-items: flex-start;
+ align-items: center;
  justify-content: center;
  background-color: var(--bg-color);
  position: relative;
- padding-top: 4.5rem;
+ padding-top: 2rem;
  margin-top: 0;
 }
 
@@ -183,9 +183,9 @@ section {
  width: 100%;
  display: flex;
  flex-direction: column;
- align-items: center;
+ align-items: flex-start;
  justify-content: center;
- text-align: center;
+ text-align: left;
 }
 
 .hero-section > div img {
@@ -193,10 +193,13 @@ section {
 }
 
 .hero-section  h1 {
- font-size: 3.4rem;
+ font-size: 3rem;
  font-weight: 600;
  line-height: 3.8rem;
- margin: 2rem 0 1.5rem 0;
+ margin: 2rem 0 .6rem 0;
+}
+.hero-section h2 {
+ margin-bottom: 1.2rem;
 }
 
 .hero-section span {
@@ -213,7 +216,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem 5%;
+  padding: 1rem 5%;
   background-color: var(--shade);
   background-image: var(--shade);
   border-radius: var(--box-radius);
@@ -493,23 +496,19 @@ footer > div {
 
 
 @media (min-width: 726px) {
- .hero-section {
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
+  .hero-section p {
+   width: 50%;
   }
-  .hero-section > div:first-of-type {
+  .hero-section > div {
    align-items: flex-start;
    text-align: left;
-  }
-  .hero-section > div:last-of-type {
-   margin-right: -4rem;
   }
   
   
   .about-section-brief {
     height: 24rem;
     flex-direction: row;
+    padding: 2rem 4%;
   }
   .about-section-brief > div {
    height: 100%;

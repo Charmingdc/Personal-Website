@@ -5,26 +5,24 @@ const HeroSection = () => {
     <section className="hero-section">
       <motion.div 
         initial={{ x: '-100%' }} 
-        animate={{ x: '0', transition: { duration: 0.8, ease: 'easeOut' } }}
-      >
-        <p>
-          Hi, I'm Adebayo Muis
-        </p>
-        
+        animate={{ x: '0', transition: { duration: 0.8, ease: 'easeOut' } }}>
         <h1>
-          Creative 
-          <span> Frontend </span>
-          Developer
+          Adebayo Muis
         </h1>
+        
+        <h2>
+         <span> Frontend Engineer </span>
+        </h2>
       </motion.div>
       
-      <motion.div 
-        initial={{ y: '-10rem' }} 
-        animate={{ y: '0', transition: { duration: 0.8, ease: 'easeOut' } }}>
-        <img 
-          src="/illustrations/laptopforcontact-Db64_6nO.png"
-          alt="Man holding a laptop" 
-        />
+      <motion.div
+        initial={{ x: '100%' }} 
+        animate={{ x: '0', transition: { duration: 0.8, ease: 'easeOut' } }}>
+        <p>
+          Building the web, crafting seamless experiences, and ensuring every click leaves an impact.
+          
+          I believe great design goes beyond visuals—it resonates, connects, and evokes emotion. 💻❤️
+        </p>
       </motion.div>
     </section>
   );
