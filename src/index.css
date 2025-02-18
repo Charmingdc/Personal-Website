@@ -3,6 +3,7 @@
  --bg-color:  rgb(5, 5, 9);
  --shade: rgb(17, 18, 23) /* rgb(9, 8, 13)*/;
  --sclr: rgb(20, 30, 120);
+ --hero-image: url('/illustrations/css-pattern-by-magicpattern.png');
  --box-radius: 1rem;
 }
 
@@ -12,6 +13,7 @@
   --bg-color: rgb(240, 245, 255);
   --shade: rgb(210, 225, 245)/*rgb(230, 230, 250)*/;
   --sclr: rgb(135, 140, 255);
+   --hero-image: url('/illustrations/css-pattern-by-magicpattern-light.png');
   --box-radius: 1rem;
 }
 
