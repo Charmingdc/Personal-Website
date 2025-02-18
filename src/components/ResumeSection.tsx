@@ -41,9 +41,8 @@ const ResumeSection = () => {
            The digital journey
          </motion.h1>
       </MotionConfig>
-    
-      
-      
+     
+     
       { /** rsume tools section **/ }
       <p className='resume-tags'>
        [ My favourite tools ]
@@ -57,7 +56,7 @@ const ResumeSection = () => {
              <ToolBox toolDetails={tool} />
          </motion.div>
         ))}
-</div>
+      </div>
       
     </section>
   )

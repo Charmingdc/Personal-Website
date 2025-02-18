@@ -196,7 +196,7 @@ section {
  font-size: 3rem;
  font-weight: 600;
  line-height: 3.8rem;
- margin: 2rem 0 .4rem 0;
+ margin: 2rem 0 .2rem 0;
 }
 .hero-section h2 {
  margin-bottom: 1.7rem;
@@ -204,6 +204,11 @@ section {
 
 .hero-section span {
  color: var(--sclr);
+}
+.hero-section a {
+ color: var(--text-color);
+ border-bottom: 0.060rem solid var(--text-color);
+ margin-top: 2rem;
 }
 
 
@@ -417,7 +422,7 @@ section {
  width: 100%;
  align-self: flex-start;
  font-weight: 600;
- margin-bottom: 2rem;
+ margin: 2rem 0 1rem 0;
 }
 
 .tools-container {

@@ -23,6 +23,10 @@ const HeroSection = () => {
           
           I believe great design goes beyond visuals—it resonates, connects, and evokes emotion. 💻❤️
         </p>
+        
+        <a href='https://x.com/Charmingdc01' target='_blank'>
+          Say hi 👋 on 𝕏
+        </a>
       </motion.div>
     </section>
   );
