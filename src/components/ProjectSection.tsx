@@ -34,7 +34,7 @@ const ProjectSection = () => {
           whileInView="active">
            <h3> Portfolio </h3>
         
-           <SvgIcons type='rightDownArrow' width='40px' height='40px' />
+           <SvgIcons type='rightDownArrow' width='30px' height='30px' />
         </motion.div>
       
         <motion.h1

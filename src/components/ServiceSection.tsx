@@ -19,7 +19,7 @@ const ServiceSection = () => {
           whileInView="active">
            <h3> Services </h3>
         
-           <SvgIcons type='rightDownArrow' width='40px' height='40px' />
+           <SvgIcons type='rightDownArrow' width='30px' height='30px' />
         </motion.div>
       
         <motion.h1
@@ -43,7 +43,7 @@ const ServiceSection = () => {
             initial="hidden"
             whileTap={{ scale: 1.2 }}
             whileInView="active">
-            <h2> 🚀 Web Development </h2>
+            <h2> 👨🏼‍🍳 Web Development </h2>
           
             <p>
              I design and craft beautiful websites and seamless experiences with ReactJs, CSS, Tailwind, Typescript, and JavaScript.
@@ -55,7 +55,7 @@ const ServiceSection = () => {
             initial="hidden"
             whileTap={{ scale: 1.2 }}
             whileInView="active">
-            <h2> 🚀 API Integrations </h2>
+            <h2> 👨🏼‍🍳 API Integrations </h2>
           
             <p>
               Integrating backend services and APIs to the frontend securely to fetch and display data in real time.
@@ -67,7 +67,7 @@ const ServiceSection = () => {
             initial="hidden"
             whileTap={{ scale: 1.2 }}
             whileInView="active">
-            <h2> 🚀 Responsive Design </h2>
+            <h2> 👨🏼‍🍳 Responsive Design </h2>
           
             <p>
               Building websites and applications that work seamlessly on various devices and screen sizes, from desktop to smartphones.
@@ -79,7 +79,7 @@ const ServiceSection = () => {
             initial="hidden"
             whileTap={{ scale: 1.2 }}
             whileInView="active">
-            <h2> 🚀 Version Control </h2>
+            <h2> 👨🏼‍🍳 Version Control </h2>
           
             <p>
               Using version control systems like Git/GitHub to collaborate with other developers and manage code changes effectively.

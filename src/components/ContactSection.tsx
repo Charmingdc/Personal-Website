@@ -17,7 +17,7 @@ const ContactSection = () => {
       <div className='section-headtag'>
         <h3> Contact </h3>
         
-         <SvgIcons type='rightDownArrow' width='40px' height='40px' />
+         <SvgIcons type='rightDownArrow' width='30px' height='30px' />
       </div>
       
       <h2 className='section-headtitle'> 

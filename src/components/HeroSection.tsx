@@ -20,7 +20,7 @@ const HeroSection = () => {
         </h1>
         
         <h2>
-         <span> Frontend Engineer </span>
+         <span> Frontend Developer </span>
         </h2>
       </motion.div>
       
