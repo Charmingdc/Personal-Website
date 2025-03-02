@@ -6,9 +6,7 @@ interface ToolProps {
 const ToolBox: React.FC<{ toolDetails: ToolProps }> = ({toolDetails}) => {
   return (
     <div>
-      <img src={toolDetails.iconUrl} alt={toolDetails.altText} />
-      
-      <p> { toolDetails.altText } </p>
+      <h3> { toolDetails.altText } </h3>
     </div>
   )
 }

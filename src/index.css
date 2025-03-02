@@ -1,7 +1,7 @@
 :root {
  --text-color: rgb(220, 220, 220);
- --bg-color:  rgb(8, 9, 10);
- --shade: rgb(17, 18, 20) /* rgb(9, 8, 13)*/;
+ --bg-color:  rgb(8, 8, 9);
+ --shade: rgb(17, 18, 20);
  --sclr: rgb(20, 30, 120);
  --box-radius: 1rem;
 }
@@ -10,7 +10,7 @@
 .light {
   --text-color: rgb(55, 55, 55);
   --bg-color: rgb(240, 245, 255);
-  --shade: rgb(210, 225, 245)/*rgb(230, 230, 250)*/;
+  --shade: rgb(210, 225, 245);
   --sclr: rgb(135, 140, 255);
   --box-radius: 1rem;
 }
