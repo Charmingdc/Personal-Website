@@ -20,7 +20,7 @@ const useProjects = () => {
       description:
         "A lightweight JavaScript library for scroll-triggered animations, supporting custom animations and callback functions.",
       stacks: ["JavaScript"],
-      liveUrl: "https://scrolljs.vercel.app",
+      liveUrl: "https://www.npmjs.com/package/@charmingdc/scrolljs",
     },
     {
       name: "MindEcho",

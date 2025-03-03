@@ -307,7 +307,7 @@ section {
 }
 
 .services-container > div {
-  width: 90%;
+  width: 95%;
   height: 15rem;
   display: flex;
   flex-direction: column;
@@ -506,7 +506,7 @@ footer > div {
 
 @media (min-width: 726px) {
   .hero-section p {
-   width: 50%;
+   width: 70%;
   }
   .hero-section > div {
    align-items: flex-start;
@@ -530,11 +530,15 @@ footer > div {
    gap: 2rem;
   }
   
+  .services-container {
+   justify-content: space-evenly;
+  }
+  
   .about-section-info {
-    height: 20rem;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+   height: 20rem;
+   align-items: center;
+   justify-content: space-between;
+   gap: 2rem;
   }
   .about-section-info > div {
    margin-bottom: 1.5rem;
