@@ -8,9 +8,9 @@
 
 
 .light {
-  --text-color: rgb(55, 55, 55);
+  --text-color: rgb(50, 50, 50);
   --bg-color: rgb(240, 245, 255);
-  --shade: rgb(210, 225, 245);
+  --shade: rgb(215, 225, 250);
   --sclr: rgb(135, 140, 255);
   --box-radius: 1rem;
 }
