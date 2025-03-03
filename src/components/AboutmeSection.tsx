@@ -40,7 +40,7 @@ const AboutmeSection = () => {
         
         <div>
           <img 
-          src='/illustrations/sketch-boy.jpg' 
+          src='/illustrations/my-dp.png' 
           alt='Adebayo Muis ( Charmingdc )' />
         </div>
         
