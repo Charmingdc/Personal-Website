@@ -1,12 +1,28 @@
+import { useState, useEffect, useRef } from "react"
 import { motion, MotionConfig } from 'motion/react';
 
 import SvgIcons from './SvgIcons.tsx';
 
 const AboutmeSection = () => {
+  const hasAlreadyGotYrsInc = useRef(false);
+  const [yearsOfExp, setYearsOfExp] = useState<number>(2);
+  
   const variants = {
    hidden: { opacity: 0, y: '4rem' },
    active: { opacity: 1, y: '0rem' }
   }
+ 
+ 
+  const currentYear = new Date().getFullYear();
+  useEffect(() => {
+   if (hasAlreadyGotYrsInc.current) return;
+   
+   const increaseInYrs = currentYear - 2025;
+   
+   setYearsOfExp(prev => prev + increaseInYrs);
+   hasAlreadyGotYrsInc.current = true;
+  }, [currentYear]);
+  
   
   return (
     <section>
@@ -58,15 +74,11 @@ const AboutmeSection = () => {
           </li>
           <li>
            <strong> 📅 Experience: </strong>
-            2+ years
+            { yearsOfExp }+ years
           </li>
           <li>
             <strong> 🚩 Location: </strong>
             Nigeria
-          </li>
-          <li> 
-            <strong> 💻 Lines of code: </strong>
-            10,000+
           </li>
         </ul>
       </motion.div>
