@@ -1,11 +1,7 @@
 const FooterSection = () => {
  return (
    <div>
-    <p> { new Date().getFullYear() } </p>
-    
-    <p>
-      Built with  '⚡' by <strong> Adebayo Muis </strong>
-     </p>
+    <p> Copyright © { new Date().getFullYear() } Adebayo Muis </p>
    </div>
   )
 }
