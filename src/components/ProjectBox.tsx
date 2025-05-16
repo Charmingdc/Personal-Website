@@ -52,15 +52,13 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({ project
         <ul className='project-cta'>
           <li>
             <a href={projectDetails.liveUrl} target='blank'>
-              Preview
-              
-              <SvgIcons type='trendUp' width='23px' height='23px' />
+              View Project
             </a>
           </li>
           
           <li>
            <a href={projectDetails.githubLink} target='_blank'>
-             <SvgIcons type='github' />
+             Source Code
            </a>
           </li>
         </ul>

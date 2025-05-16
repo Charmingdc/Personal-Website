@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { motion, MotionConfig } from 'motion/react';
 
 import SvgIcons from './SvgIcons.tsx';
@@ -16,12 +17,23 @@ interface Project {
 }
 
 const ProjectSection = () => {
+  const [loadMore, setLoadMore] = useState<boolean>(false);
+  const [projectsList, setProjectsList] = useState<Project[]>([]);
   const projects: Project[] = useProjects();
   
   const variants = {
     hidden: { opacity: 0, y: '4rem' },
     active: { opacity: 1, y: '0rem' }
   }
+  
+  
+  useEffect(() => {
+   if (loadMore) {
+    setProjectsList(projects);
+   } else {
+    setProjectsList(projects.slice(0, 4));
+   }
+  }, [loadMore]);
   
   return (
     <section>
@@ -52,10 +64,16 @@ const ProjectSection = () => {
       </p>
       
       <div className="projects-container">
-        {projects.map((project, index) => (
+        {projectsList.map((project, index) => (
           <ProjectBox projectDetails={project} key={index} />
         ))}
       </div>
+      
+      <button 
+       onClick={() => setLoadMore(!loadMore)}
+       className="view-more-btn">
+        { loadMore ? 'View less' : 'View more' }
+      </button>
     </section>
   );
 };

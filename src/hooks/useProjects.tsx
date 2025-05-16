@@ -34,8 +34,19 @@ const useProjects = () => {
       liveUrl: "https://mindecho-six.vercel.app",
     },
     {
-      name: "Thryve",
+      name: "BookQuest",
       projectId: "03",
+      githubLink: "https://github.com/Charmingdc/BookQuest",
+      type: "Gratitude Journaling App",
+      imgSource: "/illustrations/bookquest-preview.jpg",
+      description:
+        "BookQuest is a book discovery web app to discover new books, explore genres, and build your personalized favorites list—all in one place. Your next great read is just a click away.",
+      stacks: ["ReactJS", "CSS3", "TypeScript", "Firebase", "Tanstack Query"],
+      liveUrl: "https://bookquest-eosin.vercel.app",
+    },
+    {
+      name: "Thryve",
+      projectId: "04",
       githubLink: "https://github.com/Charmingdc/Thryve",
       type: "Gratitude Journaling App",
       imgSource: "/illustrations/thryve-preview.jpg",
@@ -46,7 +57,7 @@ const useProjects = () => {
     },
     {
       name: "HostImg",
-      projectId: "04",
+      projectId: "05",
       type: "Image Hosting",
       imgSource: "/illustrations/hostimg-preview.jpg",
       description:
@@ -56,7 +67,7 @@ const useProjects = () => {
     },
     {
      name: "Axionis",
-     projectId: "05",
+     projectId: "06",
      githubLink: "https://github.com/Charmingdc/Axionis",
      type: "Chatbot",
      imgSource: "/illustrations/axionis-preview.jpg",
@@ -66,7 +77,7 @@ const useProjects = () => {
     },
     {
      name: "SwiftScan",
-     projectId: "06",
+     projectId: "07",
      githubLink: "https://github.com/Charmingdc/SwiftScan",
      type: "Qrcode generator",
      imgSource: "/illustrations/swiftscan-preview.jpg",
