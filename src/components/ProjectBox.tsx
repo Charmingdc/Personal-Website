@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import SvgIcons from './SvgIcons.tsx';
+// import SvgIcons from './SvgIcons.tsx';
 
 interface projectDetailsProps {
  name: string;
