@@ -34,7 +34,7 @@ a:visited {
 }
 
 p {
- font-size: .96rem;
+ font-size: .9rem;
 }
 
 svg {
@@ -225,10 +225,13 @@ section {
 }
 .hero-section a {
  color: var(--text-color);
+ font-size: .9rem;
  border-bottom: 0.060rem solid var(--text-color);
- margin-top: 2rem;
+ margin-top: .5rem;
 }
-
+.hero-section a:first-of-type {
+  margin-top: 2.5rem;
+}
 
 .about-section-info,
 .about-section-brief {
@@ -383,6 +386,10 @@ section {
  margin-bottom: .8rem;
 }
 .project-info > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
  font-size: .95rem;
 }
 

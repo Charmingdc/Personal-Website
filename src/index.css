@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
  --text-color: rgb(220, 220, 220);
  --bg-color:  rgb(8, 8, 9);
