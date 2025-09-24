@@ -4,8 +4,9 @@ type Project = {
   type: string;
   imgSources: string[];
   description: string;
+  detailedDescription: string;
   technologies: string[];
-  date: string | Date;
+  date: string;
   liveUrl: string;
 };
 

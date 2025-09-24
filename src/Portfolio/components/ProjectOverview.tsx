@@ -31,14 +31,14 @@ const ProjectOverview = ({ project }: { project: Project }) => {
 
       <div className="project-details">
         {/* Detailed Description */}
-        <div class="info-seperator">
+        <div className="info-seperator">
           <h3> Description </h3>
 
           <p> {project.detailedDescription}</p>
         </div>
 
         {/* Technologies */}
-        <div class="info-seperator">
+        <div className="info-seperator">
           <h3> Technologies </h3>
 
           <div className="project-technologies">
@@ -49,21 +49,21 @@ const ProjectOverview = ({ project }: { project: Project }) => {
         </div>
 
         {/* Type */}
-        <div class="info-seperator">
+        <div className="info-seperator">
           <h3> Type </h3>
 
           <p> {project.type}</p>
         </div>
 
         {/* Date */}
-        <div class="info-seperator">
+        <div className="info-seperator">
           <h3> Date </h3>
 
           <p> {project.date}</p>
         </div>
 
         {/* Gallery */}
-        <div class="info-seperator">
+        <div className="info-seperator">
           <h3> Gallery </h3>
 
           <div className="project-images">
