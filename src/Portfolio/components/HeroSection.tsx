@@ -1,4 +1,6 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -32,10 +34,12 @@ const HeroSection = () => {
           resonates, connects, and evokes emotion. 💻❤️
         </p>
 
-        <a href="/resume">View Cv</a>
         <a href="https://x.com/Charmingdc01" target="_blank">
-          Say hi 👋 on 𝕏
+          Say hi on 𝕏 <ExternalLink size={14} />
         </a>
+        <Link to="/blog">
+          Visit my Blog <ExternalLink size={14} />
+        </Link>
       </motion.div>
     </section>
   );

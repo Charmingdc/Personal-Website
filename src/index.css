@@ -1,13 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
  --text-color: rgb(220, 220, 220);
- --bg-color:  rgb(8, 8, 9);
- --shade: rgb(17, 18, 20);
- --sclr: rgb(20, 30, 120);
- --box-radius: 1rem;
+ --bg-color:  rgb(14, 14, 16);
+ --shade: rgb(22, 22, 26);
+ --sclr: rgb(30, 40, 120);
+ --box-radius: .6rem;
 }
 
 

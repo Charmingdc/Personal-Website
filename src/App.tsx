@@ -1,35 +1,30 @@
-import Navbar from './components/Navbar';
-import HeroSection from  './components/HeroSection';
-import AboutmeSection from './components/AboutmeSection.tsx';
-// import ServiceSection from './components/ServiceSection.tsx';
-import ProjectSection from './components/ProjectSection.tsx';
-import ResumeSection from './components/ResumeSection.tsx';
-import ContactSection from './components/ContactSection.tsx';
-import FooterSection from './components/FooterSection.tsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy } from "react";
 
-import './App.css'
+// Imported all portfolio related components
+const PortfolioLayout = lazy(() => import("./Portfolio/Layout"));
+const PortolioPage = lazy(() => import("./Portfolio/pages/Home"));
+const ProjectsPage = lazy(() => import("./Portfolio/pages/Projects"));
+
+// Imported all blog related components
+const BlogPage = lazy(() => import("./Blog/Posts"));
 
 const App = () => {
- return (
-   <>
-    <header>
-      <Navbar />
-    </header>
-    
-    <main>
-      <HeroSection />
-      <AboutmeSection />
-      {/** <ServiceSection /> **/}
-      <ProjectSection />
-      <ResumeSection /> 
-      <ContactSection />
-    </main>
-    
-    <footer>
-      <FooterSection />
-    </footer>
-   </>
-  )
-}
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Portfolio related routes */}
+        <Route path="/" element={<PortfolioLayout />}>
+          <Route index element={<PortolioPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:projectName" element={<ProjectsPage />} />
+        </Route>
 
-export default App
+        {/* Blog related routes */}
+        <Route path="/blog" element={<BlogPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;

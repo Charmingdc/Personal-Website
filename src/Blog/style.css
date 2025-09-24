@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin :0;
+  outline: none;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  text-align: center;
+  padding-inline: 10vw;
+  overflow: hidden;
+}

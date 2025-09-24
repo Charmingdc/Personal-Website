@@ -1,20 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
+import { ChevronRight } from "lucide-react";
+import type { Project } from "../types";
 // import SvgIcons from './SvgIcons.tsx';
 
-interface projectDetailsProps {
-  name: string;
-  type: string;
-  githubLink?: string;
-  projectId: string;
-  imgSource: string;
-  description: string;
-  stacks: string[];
-  liveUrl: string;
-}
-
-const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({
+const ProjectBox: React.FC<{ projectDetails: Project }> = ({
   projectDetails
 }) => {
+  const navigate = useNavigate();
   const variants = {
     hidden: { opacity: 0, y: "4rem" },
     active: { opacity: 1, y: "0rem" }
@@ -31,7 +24,7 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({
     >
       <div className="project-image">
         <img
-          src={projectDetails.imgSource}
+          src={projectDetails.imgSources[0]}
           alt={`${projectDetails.name} preview`}
         />
       </div>
@@ -41,19 +34,12 @@ const ProjectBox: React.FC<{ projectDetails: projectDetailsProps }> = ({
 
         <p>{projectDetails.description}</p>
 
-        <ul className="project-cta">
-          <li>
-            <a href={projectDetails.liveUrl} target="blank">
-              View Project
-            </a>
-          </li>
-
-          <li>
-            <a href={projectDetails.githubLink} target="_blank">
-              Source Code
-            </a>
-          </li>
-        </ul>
+        <button
+          onClick={() => navigate(`/projects/${projectDetails.name}`)}
+          className="project-cta"
+        >
+          View Project <ChevronRight />
+        </button>
       </div>
     </motion.div>
   );
