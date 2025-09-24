@@ -3,7 +3,6 @@ import { ExternalLink, Github } from "lucide-react";
 import type { Project } from "../types";
 
 const ProjectOverview = ({ project }: { project: Project }) => {
-  console.log(project.imageSources);
   return (
     <section className="project-overview">
       <h1> {project.name} </h1>

@@ -10,7 +10,7 @@ import type { Project } from "../types";
 const ProjectSection = ({
   projectsPage = false
 }: {
-  projectsPage: boolean;
+  projectsPage?: boolean;
 }) => {
   const navigate = useNavigate();
   const [projectsList, setProjectsList] = useState<Project[]>([]);

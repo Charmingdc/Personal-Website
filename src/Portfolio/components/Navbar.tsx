@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-import { useTheme } from "@/contexts/ThemeContext";
+import { useTheme } from "../../contexts/ThemeContext";
 import SvgIcons from "./SvgIcons";
 
 const Navbar = () => {
