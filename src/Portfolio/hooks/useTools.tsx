@@ -15,9 +15,9 @@ const useTools = () => {
     { iconUrl: "icons/icon-nextjs.png", altText: "Next.Js" },
     { iconUrl: "/icons/icon-supabase.png", altText: "Supabase" },
     { iconUrl: "/icons/icon-firebase.png", altText: "Firebase" },
+    { iconUrl: "/icons/framer.png", altText: "Framer" },
     { iconUrl: "/icons/icon-github.png", altText: "Github" },
     { iconUrl: "/icons/seo.png", altText: "Seo" },
-    { iconUrl: "/icons/framer.png", altText: "Framer" },
     { iconUrl: "/icons/etc.png", altText: "And others" }
   ];
 

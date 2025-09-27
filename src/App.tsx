@@ -7,7 +7,11 @@ const PortolioPage = lazy(() => import("./Portfolio/pages/Home"));
 const ProjectsPage = lazy(() => import("./Portfolio/pages/Projects"));
 
 // Imported all blog related components
-const BlogPage = lazy(() => import("./Blog/Posts"));
+const BlogLayout = lazy(() => import("./Blog/Layout"));
+const BlogListPage = lazy(() => import("./Blog/pages/BlogList"));
+const BlogPage = lazy(() => import("./Blog/pages/BlogPage"));
+
+import "./App.css";
 
 const App = () => {
   return (
@@ -21,7 +25,10 @@ const App = () => {
         </Route>
 
         {/* Blog related routes */}
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog" element={<BlogLayout />}>
+          <Route index element={<BlogListPage />} />
+          <Route path="/blog/:slug" element={<BlogPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

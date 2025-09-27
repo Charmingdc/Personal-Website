@@ -1,18 +1,18 @@
 :root {
- --text-color: rgb(220, 220, 220);
- --bg-color:  rgb(14, 14, 16);
- --shade: rgb(22, 22, 26);
+ --text-color: rgb(210, 210, 220);
+ --bg-color:  rgb(10, 10, 10);
+ --shade: rgb(14, 14, 14);
  --sclr: rgb(30, 40, 120);
- --box-radius: .6rem;
+ --box-radius: .8rem;
 }
 
 
 .light {
-  --text-color: rgb(50, 50, 50);
+  --text-color: rgb(30, 30, 30);
   --bg-color: rgb(240, 245, 255);
   --shade: rgb(215, 225, 250);
   --sclr: rgb(135, 140, 255);
-  --box-radius: 1rem;
+  --box-radius: .8rem;
 }
 
 

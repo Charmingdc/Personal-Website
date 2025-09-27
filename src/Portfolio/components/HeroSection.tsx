@@ -40,6 +40,9 @@ const HeroSection = () => {
         <Link to="/blog">
           Visit my Blog <ExternalLink size={14} />
         </Link>
+        <a href="https://github.com/Charmingdc" target="_blank">
+          Connect on Github <ExternalLink size={14} />
+        </a>
       </motion.div>
     </section>
   );
