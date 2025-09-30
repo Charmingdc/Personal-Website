@@ -12,7 +12,7 @@ const Navbar = () => {
         animate={{ y: "0rem", transition: { duration: 0.8, ease: "easeIn" } }}
       >
         <li>
-          <h1> Charmingdc </h1>
+          <h1> Charmingdc.tsx </h1>
         </li>
         <li>
           <button className="switch-toggle" onClick={toggleTheme}>

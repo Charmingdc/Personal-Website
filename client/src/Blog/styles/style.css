@@ -1,11 +1,3 @@
-body {
-  font-family: "Fira Code", monospace;
-  font-weight: 300;
-}
-
-p {
-  font-size: 0.8rem;
-}
 
 .current-dir {
   display: flex;
