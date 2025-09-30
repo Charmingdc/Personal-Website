@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ExternalLink, Github } from "lucide-react";
 import type { Project } from "../types";
 
@@ -8,14 +7,14 @@ const ProjectOverview = ({ project }: { project: Project }) => {
       <h1> {project.name} </h1>
 
       <div className="quick-action">
-        <Link to={`${project.liveUrl}`}>
+        <a href={`${project.liveUrl}`} target="_blank">
           <ExternalLink size={18} /> Live URL
-        </Link>
+        </a>
 
         {project?.githubLink ? (
-          <Link to={`${project.githubLink}`}>
+          <a href={`${project.githubLink}`} target="_blank">
             <Github size={18} /> Github Repo
-          </Link>
+          </a>
         ) : (
           <div>
             <Github size={18} /> No Repo
