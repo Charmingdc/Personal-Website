@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy } from "react";
 
 // Imported all portfolio related components
-const PortfolioLayout = lazy(() => import("./Portfolio/Layout"));
-const PortolioPage = lazy(() => import("./Portfolio/pages/Home"));
+import PortfolioLayout from "./Portfolio/Layout";
+import PortolioPage from "./Portfolio/pages/Home";
 const ProjectsPage = lazy(() => import("./Portfolio/pages/Projects"));
 
 // Imported all blog related components

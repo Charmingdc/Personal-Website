@@ -1,7 +1,7 @@
 :root {
   --text-color: rgb(210, 210, 220);
-  --bg-color: rgb(14, 14, 14);
-  --shade: rgb(22, 22, 24);
+  --bg-color: rgb(16, 16, 19);
+  --shade: rgb(22, 22, 26);
   --sclr: rgb(30, 40, 120);
   --box-radius: 0.7rem;
 }
